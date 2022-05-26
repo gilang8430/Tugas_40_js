@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar javascript</title>
+  </head>
+  <body>
+    <button type="button" onclick="jalanan()" name="button">jalankan</button>
+    <br>
+    <br>
+    <hr>
+    <b>Base URI</b> property  : <br>
+    <p id="copy">contoh</p>
+    <hr>
+    <b>body</b> property : <br>
+    <p id="">contoh</p>
+    <hr>
+    <b>Create</b> Element  : <br><br>
+
+
+    <script type="text/javascript">
+      function jalanan(){
+        var a = document.baseURI;
+        document.getElementById('copy').innerHTML = a;
+
+        var b = document.body.style.backgroundColor = "green";
+
+        var c = document.createElement("input")
+        c.innerHTML = "";
+        document.body.appendChild(c);
+      }
+    </script>
+  </body>
+</html>
